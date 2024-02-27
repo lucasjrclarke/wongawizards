@@ -20,17 +20,20 @@ function App() {
   const handleVideoError = () => {
     const videoDiv = document.getElementById("video-element");
 
-
-    const replacementDiv = document.createElement('img');
-    replacementDiv.src = "../src/assets/images/wizards-awards-day.png";
-    replacementDiv.alt = "Welcome to the Wonga Park Wizards!";
-    replacementDiv.id = "replacement-title-img"
-    
-    if (videoDiv) {
-      videoDiv.replaceWith(replacementDiv);
+    if (document.readyState != "complete") {
+      const replacementDiv = document.createElement('img');
+      replacementDiv.src = "../src/assets/images/wizards-awards-day.png";
+      replacementDiv.alt = "Welcome to the Wonga Park Wizards!";
+      replacementDiv.id = "replacement-title-img"
+      
+      if (videoDiv) {
+        videoDiv.replaceWith(replacementDiv);
+      }
     }
     setVideoLoaded(true);
   }
+
+  setTimeout(handleVideoError, 3000);
 
   window.setTimeout(() => {
     if (videoLoaded === false) {
@@ -46,15 +49,19 @@ function App() {
         <HeaderBar/>
         <div id="main">
           <div id="landing">
-            <video id="video-element" onError={handleVideoError} controls muted autoPlay loop>
-              <source src="APH WONGA PARK  SHORT TRAILER V6.mp4" type="video/mp4"/>
-              /* image to go in here - make it so that it appears before after video loads/ends */
-            </video>
+            <div id="landing-photo">
+              <img src="/wizards-logo-colour-cutout-with-white 1.png" alt="" />
+              {/* <p>Welcome to 'The Cauldron', the home of the Wonga Park Wizards!</p> */}
+            </div>
           </div>
           <div id="mission">
             <h2>Our mission</h2>
             <i>Our mission is "to provide a healthy, supportive and fun environment for young boys and girls together with committed parents and friends to help develop football and life skills."</i>
           </div>
+          <video id="video-element" onError={handleVideoError} controls muted autoPlay loop>
+              <source src="APH WONGA PARK  SHORT TRAILER V6.mp4" type="video/mp4"/>
+              /* image to go in here - make it so that it appears before after video loads/ends */
+            </video>
           <div id="about">
             <Title text="About Us" img="cauldron-goal-day-facing-hill.png"/>
             <div id="about-intro" className="padded-div">

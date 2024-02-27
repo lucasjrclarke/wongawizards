@@ -1,4 +1,4 @@
-#header-bar {
+#header-bar, #header-bar-mobile {
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -10,6 +10,14 @@
     z-index: 99;
 }
 
+#header-bar-mobile {
+    background-color: var(--color-primary);
+}
+
+.menu-closed {
+    background-color: red !important;
+}
+
 #header-bar--left,
 #nav {
     display: flex;
@@ -17,6 +25,10 @@
 }
 
 #header-bar img {
+    max-width: 50px;
+}
+
+#header-bar-mobile img {
     max-width: 50px;
 }
 

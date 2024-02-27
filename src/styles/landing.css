@@ -1,3 +1,47 @@
+#landing-photo {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../src/assets/images/cauldron-at-night.png');
+    background-size: cover; /* Adjust image size to cover the container */
+    width: 100%;
+    height: 100%;
+}
+
+#landing-photo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 100%;
+}
+
+#landing-photo:first-child {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#landing-photo img:nth-of-type(1) {
+    max-width: 40vw;
+}
+
+/* #landing-photo p {
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-secondary);
+    text-shadow: 1px 1px 0px var(--color-primary), 
+    -1px 1px 0 var(--color-primary), 
+    1px -1px 0 var(--color-primary), 
+    -1px -1px 0 var(--color-primary);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    text-align: center;
+} */
+
 #mission {
     width: 100vw;
     display: flex;
@@ -91,4 +135,10 @@
 #kits-rack .kit-link img:hover {
     scale: 1.05;
     z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    #landing-photo img {
+        max-width: 80% !important;
+    }
 }
