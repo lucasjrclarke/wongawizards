@@ -1,0 +1,14 @@
+:root {
+    /* colours */
+    --color-primary: #162541;
+    --color-secondary: #FBD100;
+    --color-light: #F5F5F5;
+    --color-dark: #000000;
+    --color-link: #223F92;
+
+
+    /* fonts */
+    --font-heading: 'Red Hat Display', sans-serif;
+    --font-body: 'Red Hat Display', sans-serif;
+    --font-special: 'Titillium Web', sans-serif;
+}

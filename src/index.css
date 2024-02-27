@@ -1,0 +1,168 @@
+:root {
+  font-family: var(--font-heading);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+
+}
+
+p {
+  font-weight: 500;
+  font-style: italic;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-link);
+  text-decoration: inherit;
+  cursor: pointer;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+}
+
+a:hover {
+  color: var(--color-secondary) !important;
+  text-decoration: underline;
+}
+
+a:hove body {
+  margin: 0;
+  display: flex;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: var(--color-secondary)
+}
+
+.bold {
+  font-style: normal;
+  font-weight: 700;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.2em 1.5em;
+  font-size: 0.9em;
+  font-weight: 800;
+  font-family: inherit;
+  text-transform: uppercase;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button:active {
+  background-color: var(--color-light);
+  /* tbd (see above) */
+  scale: 0.95;
+}
+
+video {
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+  z-index: -1;
+  /* Adjust this value as needed */
+}
+
+.vertical-line {
+  border-right: 1px solid var(--color-primary);
+  padding: 0 1em;
+  height: auto;
+}
+
+.title-box {
+  max-width: 100%;
+  background-size: 'contain';
+  background-position: center;
+  text-align: left;
+  padding: 2em 4em;
+}
+
+.title-box h1 {
+  font-weight: 900;
+  color: var(--color-light);
+}
+
+#teamapp-button img {
+  max-width: 150px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+#teamapp-button img:hover {
+  scale: 1.01;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+  }
+
+  a:hover {
+    color: var(--color-link);
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+#loading-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+  }
+
+  a:hover {
+    color: var(--color-link);
+  }
+
+  button {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+  }
+} */

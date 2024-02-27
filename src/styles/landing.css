@@ -1,0 +1,94 @@
+#mission {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 10em 20vw;
+    text-align: center;
+}
+
+#mission h2 {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#mission i {
+    max-width: 500px;
+}
+
+.padded-div {
+    text-align: center;
+    padding: 3em 4em;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-intro {
+    padding: 5em;
+}
+
+#about-intro>p,
+#about-intro>a {
+    max-width: 700px;
+}
+
+#board-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.board-member {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+    font-size: small;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+.board-member img {
+    max-width: 12em;
+    align-self: center;
+    padding-bottom: 1em;
+}
+
+.board-member #kits>i {
+    margin-top: -1em;
+}
+
+#kits>a {
+    margin-top: 1em;
+}
+
+#kits-rack {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#kits-rack>* {
+    padding: 1em;
+}
+
+#kits-rack p {
+    font-size: small;
+}
+
+#kits-rack img {
+    max-width: 175px;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+#kits-rack .kit-link img:hover {
+    scale: 1.05;
+    z-index: -1;
+}
