@@ -106,6 +106,8 @@ video {
   max-width: 100%;
   background-size: 'contain';
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   text-align: left;
   padding: 2em 4em;
 }

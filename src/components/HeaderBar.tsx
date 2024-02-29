@@ -3,11 +3,22 @@ import TeamAppButton from "./TeamAppButton"
 
 const HeaderBar = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 600;
+  const breakpoint = 800;
 
   document.getElementById("hamburger")?.addEventListener("click", () => {
     document.getElementById("mobile-menu")?.classList.toggle('menu-closed');
   });
+
+  function showHeader() {
+    var hamburgerIcon = document.getElementById("hamburger");
+    hamburgerIcon?.classList.toggle('opened');
+    var x = document.getElementById("mobile-menu");
+    if (x && x.style.display === "block") {
+      x.style.display = "none";
+    } else if (x) {
+      x.style.display = "block";
+    }
+  }
 
   // from https://stackoverflow.com/questions/62954765/how-to-do-conditional-rendering-according-to-screen-width-in-react
   useEffect(() => {
@@ -40,11 +51,18 @@ const HeaderBar = () => {
    } else {
    return (
     <div id="header-bar-mobile" className='mobile-header'>
-      <img src="wizards-logo-cutout-white-border.png" alt="Wonga Park Wizards logo" />
-      <div id="hamburger">
-        <button></button>
+      <div id="mobile-bar">
+        <img src="wizards-logo-cutout-white-border.png" alt="Wonga Park Wizards logo" />
+        <a id="hamburger" className="icon" onClick={showHeader}>
+          {/* credit to https://codepen.io/ainalem/pen/wvKOEMV */}
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path className="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path className="line line2" d="M 20,50 H 80" />
+            <path className="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </a>
       </div>
-      <div id="mobile-menu" className="menu-closed">
+      <div id="mobile-menu">
         <ul>
           <a href="."><li className="nav-item">Home</li></a>
           <a href="#mission"><li className="nav-item">About Us</li></a>
@@ -52,7 +70,6 @@ const HeaderBar = () => {
           <a href="https://wongawizardsfc.teamapp.com/articles/8111971?_detail=v1" target="_blank"><li className="nav-item">Registration</li></a>
         </ul>
       </div>
-       
     </div>
    )};
 
