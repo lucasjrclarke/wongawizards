@@ -60,7 +60,7 @@ function App() {
           </div>
          
           <div id="about">
-            <Title text="About Us" img="wongawizards/docs/cauldron-at-night.png"/>
+            <Title text="About Us" img="cauldron-at-night.png"/>
             <div id="about-intro" className="padded-div">
               <p>At Wonga Wizards FC, we are committed to the development of the World game but we never forget that our players are on a journey of development in a raft of areas, not just football.  We hope to instill a sense of team, discipline and respect and have a lot of fun along the way.<br/><br/>If you have any questions at all about our club, please send us a note.  Or even better, why don’t you come along and see the happy young smiling faces for yourself on any Sunday morning April through to September. We can guarantee you will love the coffee.<br/><br/></p>
               <p>If you’re interested in joining us for the 2024 season, please click the link below. Registrations for the season will open in the middle of January via the Play Football website.<br/><br/></p>
