@@ -7,7 +7,7 @@ interface TitleProps {
 }
 
 function Title(props: TitleProps) {
-  const imagePath = `/src/assets/images/${props.img}`;
+  const imagePath = `${props.img}`;
 
   return (
     <div className="title-box" style={{backgroundImage: `url(${imagePath})`}}>

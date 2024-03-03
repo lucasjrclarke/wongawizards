@@ -5,7 +5,7 @@ const Board = () => {
   const boardMemberNames = ["Tyler Daniels", "Tyler Damiels"];
   const boardMemberRoles = ["President", "President 2"];
   const boardMemberEmails = ["president@wwfc.com.au", "president2@wwfc.com.au"];
-  const boardMemberImages = ["wongawizards/docs/default-profile-pic.png", "wongawizards/docs/default-profile-pic.png"];
+  const boardMemberImages = ["default-profile-pic.png", "default-profile-pic.png"];
 
   
   return (

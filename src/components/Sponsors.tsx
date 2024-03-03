@@ -13,7 +13,7 @@ const Sponsors = () => {
             <div className="sponsor-content">
               <p className={sponsors_status[index]}>{sponsors_status[index]}</p>
               <a href={sponsors_site[index]}>
-                <img src={(`../src/assets/images/sponsor${sponsors_url[index]}.png`)} alt={sponsor}/>
+                <img src={(`sponsor${sponsors_url[index]}.png`)} alt={sponsor}/>
               </a>
             </div>
             {index != sponsors_names.length-1 && (
