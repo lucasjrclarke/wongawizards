@@ -11,7 +11,7 @@ const Kits = () => {
         <div key={index}>
           {/* if new jerseys come out can update href to be ={kit_urls[index]} and replace the array with correct urls */}
           <a className="kit-link" href="https://macronvic.com.au/collections/wonga-wizards-fc" target="_blank">
-            <img src={(`images/wizards-jerseys/${index+1}.png`)} alt={kit_names[index]} />
+            <img src={(`/wongawizards/src/assets/images/wizards-jerseys/${index+1}.png`)} alt={kit_names[index]} />
           </a>
           <p>{names}</p>
         </div>
