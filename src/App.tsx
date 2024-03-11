@@ -87,8 +87,8 @@ function App() {
             </div>
           </div>
         </div>
-        <div>
-          <Title text="" img="cauldron-at-night-blue.png"/>
+        <div id="video">
+          <Title text="Trailer" img="cauldron-at-night-blue.png"/>
           <video id="video-element" onError={handleVideoError} controls muted autoPlay loop>
             <source src="APH WONGA PARK  SHORT TRAILER V6.mp4" type="video/mp4"/>
             /* image to go in here - make it so that it appears before after video loads/ends */
