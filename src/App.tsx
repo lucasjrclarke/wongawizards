@@ -6,6 +6,7 @@ import Board from './components/Board'
 import Kits from './components/Kits'
 import TeamAppButton from './components/TeamAppButton'
 import Footer from './components/Footer'
+import Gallery from './components/Gallery'
 
 function App() {
 
@@ -40,7 +41,6 @@ function App() {
       handleVideoError;
     }
   }, 5000);
-
     
 
   return (
@@ -71,12 +71,15 @@ function App() {
             <Board/>
           </div>
           <div id="news">
-            <Title text="News/Events" img="cauldron-at-night.png"/>
+            <Title text="Gallery" img="cauldron-at-night.png"/>
             <div id="socials" className='padded-div'>
-              <p>Instagram widget goes here</p>
-              {/* https://app.curator.io/source/create/details/2/34 */}
-              <i>For the latest news, events, and more, visit our Team App page</i>
-              <TeamAppButton/>
+              <div id="gallery">
+                <Gallery/>
+              </div>
+              <div id="socials-link">
+                <i>For the latest news, events, and more, visit our Team App page</i>
+                <TeamAppButton/>
+              </div>
             </div>
             <div id="kits" className='padded-div'>
               <Kits/>
