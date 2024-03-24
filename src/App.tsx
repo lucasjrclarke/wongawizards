@@ -81,6 +81,7 @@ function App() {
                 <TeamAppButton/>
               </div>
             </div>
+            <Title text="Kits" img="cauldron-at-night.png"/>
             <div id="kits" className='padded-div'>
               <Kits/>
               <i>2023/2024 jerseys are available on the Macron website</i>
