@@ -54,7 +54,8 @@
 }
 
 #footer .sponsor img {
-    max-width: 10em;
+    max-width: 15em;
+    width: 20vw;
 }
 
 #sponsors-container .Platinum {
