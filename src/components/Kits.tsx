@@ -2,7 +2,7 @@
 
 const Kits = () => {
 
-    const kit_names = ["Juniors Home 23/24", "Juniors Away 23/24", "Seniors Home 23/24", "Seniors Away 23/24"];
+    const kit_names = ["Juniors Home 24/25", "Juniors Away 24/25", "Seniors Home 24/25", "Seniors Away 24/25"];
     // const kit_urls = ["2023-jersey-juniors-home", "2023-jersey-juniors-away", "2023-jersey-seniors-home", "2023-jersey-seniors-away"];
 
   return (
