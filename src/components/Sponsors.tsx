@@ -1,10 +1,10 @@
 // import React from 'react'
 
 const Sponsors = () => {
-  const sponsors_names = ["Bendigo Bank", "Australian Production House", "Ryan Smith", "Hoskins", "Transrock"];
-  const sponsors_url = ["bendigobank", "aph", "ryansmith", "hoskins", "transrock"];
-  const sponsors_status = ["Platinum", "Silver", "Silver", "Supporting", "Supporting"];
-  const sponsors_site = ["https://www.bendigobank.com.au/branch/vic/community-bank-warrandyte/", "https://www.australianproductionhouse.com", "http://www.ryansmith.com.au", "https://www.hoskins.com.au", "https://www.transrock.com.au"]
+  const sponsors_names = ["Bendigo Bank", "Jamo Plastering", "Hi Lift Structural"];
+  const sponsors_url = ["bendigobank", "jamoplastering", "hiliftstructural"];
+  const sponsors_status = ["Platinum", "Platinum", "Platinum"];
+  const sponsors_site = ["https://www.bendigobank.com.au/branch/vic/community-bank-warrandyte/", "https://jamoplastering.com.au", ""]
   
   return (
     <div id="sponsors-container">
