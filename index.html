@@ -17,7 +17,22 @@
 
 <body>
   <div id="root"></div>
+
   <script type="module" src="/src/main.tsx"></script>
+
+  <!-- Vapi Assistant Widget -->
+  <script
+    src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
+    async
+    type="text/javascript">
+  </script>
+
+  <vapi-widget
+    assistant-id="00e14023-bdf9-41c2-b9ad-dee6af725b84"
+    public-key="246057c7-3986-48a1-a9ae-afa85e9caa85">
+  </vapi-widget>
+  <!-- End Vapi Assistant Widget -->
+
 </body>
 
 </html>
