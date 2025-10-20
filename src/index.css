@@ -82,11 +82,16 @@ vapi-widget button {
   color: var(--color-light)
 }
 
+.vapi-widget-wrapper>div:nth-child(1)>div:nth-child(1) {
+  max-width: 90vw !important;
+  max-height: 80vh !important;
+}
+
 /* Override VAPI widget colors */
 .vapi-widget-wrapper .text-red-600 {
   --tw-text-opacity: 1;
   color: var(--color-light) !important;
-  font-size: 0.5em !important;
+  font-size: 0.7em !important;
 }
 
 .vapi-widget-wrapper .hover\:border-red-600:hover {
