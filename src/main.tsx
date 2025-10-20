@@ -27,4 +27,11 @@ document.body.appendChild(vapiScript);
 const vapiWidget = document.createElement("vapi-widget");
 vapiWidget.setAttribute("assistant-id", "00e14023-bdf9-41c2-b9ad-dee6af725b84");
 vapiWidget.setAttribute("public-key", "246057c7-3986-48a1-a9ae-afa85e9caa85");
+vapiWidget.setAttribute("base-color", "#F5F5F5");
+vapiWidget.setAttribute("accent-color", "#223F92");
+vapiWidget.setAttribute("button-base-color", "#162541");
+vapiWidget.setAttribute("button-accent-color", "#FBD100");
+// Leaving this line here to show the two instances!
+vapiWidget.setAttribute("size", "compact");
+
 document.body.appendChild(vapiWidget);

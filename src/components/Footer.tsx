@@ -9,6 +9,8 @@ const Footer = () => {
         </div>
         <div id="footer-details">
             <img src="blue-wizards-footer-logo-1.png" alt="Wonga Park Wizards logo" />
+            <strong>+61 (0)3 8338 1497</strong>
+            <br/>
             <p>President - Tyler Daniels</p>
             <a>president@wwfc.club</a>
             <a>0412956961<br/><br/></a>
