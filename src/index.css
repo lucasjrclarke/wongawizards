@@ -82,6 +82,29 @@ vapi-widget button {
   color: var(--color-light)
 }
 
+/* Override VAPI widget colors */
+.vapi-widget-wrapper .text-red-600 {
+  --tw-text-opacity: 1;
+  color: var(--color-light) !important;
+}
+
+.vapi-widget-wrapper .hover\:border-red-600:hover {
+  --tw-border-opacity: 1;
+  border-color: var(--color-light) !important;
+}
+
+.vapi-widget-wrapper .hover\:border-red-600:active {
+  color: var(--color-primary) !important
+}
+
+.h-10 {
+  background-color: var(--color-secondary) !important;
+}
+
+.h-10>svg:nth-child(1) {
+  color: var(--color-primary) !important;
+}
+
 button:hover {
   background-color: var(--color-secondary);
   color: var(--color-primary);

@@ -18,20 +18,28 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 )
 
 // Add Vapi AI Widget dynamically after the app loads
-const vapiScript = document.createElement("script");
-vapiScript.src = "https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js";
-vapiScript.async = true;
-vapiScript.type = "text/javascript";
-document.body.appendChild(vapiScript);
 
-const vapiWidget = document.createElement("vapi-widget");
-vapiWidget.setAttribute("assistant-id", "00e14023-bdf9-41c2-b9ad-dee6af725b84");
-vapiWidget.setAttribute("public-key", "246057c7-3986-48a1-a9ae-afa85e9caa85");
-vapiWidget.setAttribute("base-color", "#F5F5F5");
-vapiWidget.setAttribute("accent-color", "#223F92");
-vapiWidget.setAttribute("button-base-color", "#162541");
-vapiWidget.setAttribute("button-accent-color", "#FBD100");
-// Leaving this line here to show the two instances!
-vapiWidget.setAttribute("size", "compact");
+// Add Vapi AI Widget dynamically — only once
+// const addVapiWidget = () => {
+// if (document.querySelector("vapi-widget")) return; // Prevent duplicates
 
-document.body.appendChild(vapiWidget);
+// const vapiScript = document.createElement("script");
+// vapiScript.src = "https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js";
+// vapiScript.async = true;
+// vapiScript.type = "text/javascript";
+// vapiScript.onload = () => {
+// const widget = document.createElement("vapi-widget");
+// widget.setAttribute("assistant-id", "00e14023-bdf9-41c2-b9ad-dee6af725b84");
+// widget.setAttribute("public-key", "246057c7-3986-48a1-a9ae-afa85e9caa85");
+// // widget.setAttribute("base-color", "#F5F5F5");
+// // widget.setAttribute("accent-color", "#223F92");
+// // widget.setAttribute("button-base-color", "#162541");
+// // widget.setAttribute("button-accent-color", "#FBD100");
+// document.body.appendChild(widget);
+// };
+// document.body.appendChild(vapiScript);
+// };
+
+
+// addVapiWidget();
+
